@@ -1,5 +1,5 @@
 # go-vscode
-## Go (Golang) plus Visual Studio Code Editor Docker image.
+## Go (Golang) plus Visual Studio Code (VSC) Editor Docker image.
 
 This image provides
 - Go language
