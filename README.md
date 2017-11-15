@@ -1,6 +1,6 @@
 # go-vscode
 
-## Go (Golang) plus Visual Studio Code (VSC) Editor Docker image.
+## Go (Golang) plus Visual Studio Code (VSC) Editor Docker image
 
 This image provides
 
@@ -15,6 +15,7 @@ This image provides
   - git tags
   - go
   - go tdd
+  - markdown lint
   - vim
 - a basic configuration of vsc
 
