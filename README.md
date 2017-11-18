@@ -31,4 +31,4 @@ To create a container :
       --name go-vscode teenooch/go-vscode
 ```
 
-Make sure you are allowed to open the display. If not try xhost +local:
+Make sure you are allowed to open the display. If not try `xhost +local:`
