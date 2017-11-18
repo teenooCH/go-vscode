@@ -24,7 +24,11 @@ Vsc is run as user vscode. Working directory is /go.
 To create a container :
 
 ```bash
-  docker run -d -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v /dev/shm/:/dev/shm/ -v /home/myuser/go/src/:/go/src/ -v /home/myuser/dev/:/home/vscode/dev/ -e DISPLAY=$DISPLAY --name go-vscode teenooch/go-vscode
+  docker run -d -v /tmp/.X11-unix/:/tmp/.X11-unix/ -v /dev/shm/:/dev/shm/ \
+      -v /home/myuser/go/src/:/go/src/ -v /home/myuser/dev/:/home/vscode/dev/ \
+      --security-opt="seccomp=unconfined" \
+      -e DISPLAY=$DISPLAY \
+      --name go-vscode teenooch/go-vscode
 ```
 
 Make sure you are allowed to open the display. If not try xhost +local:
